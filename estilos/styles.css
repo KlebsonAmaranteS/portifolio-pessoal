@@ -77,8 +77,22 @@ a{
 
 #welcome-section h1 {
   font-size: 55px;
- font-family: 'Raleway', sans-serif;
- color: #F0F0F0;
+  font-family: 'Raleway', sans-serif;
+  color: #F0F0F0;
+  border-right: 0.10em solid #BE3144; /* Cria o efeito do cursor piscando */
+  white-space: nowrap; /* Evita quebrar linha */
+  overflow: hidden; /* Esconde o conteúdo que excede a largura do elemento */
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite; /* Animação do efeito */
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Animação do cursor piscando */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #BE3144 }
 }
 
 .container-principal{
@@ -91,6 +105,10 @@ a{
   font-size: 27px;
   font-family: 'Poppins', sans-serif;
   color: #be3144;
+  /*border-right: 0.12em solid #BE3144; /* Cria o efeito do cursor piscando */
+  white-space: nowrap; /* Evita quebrar linha */
+  overflow: hidden; /* Esconde o conteúdo que excede a largura do elemento */
+  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite; /* Animação do efeito */
 }
 
 #projects {
