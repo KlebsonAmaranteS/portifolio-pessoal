@@ -264,29 +264,27 @@ a{
     text-decoration: none;
     color: goldenrod;
   }
-@media screen and (max-width: 768px) {
-  #navbar{
-    height: 100px;
-  }
+@media screen and (max-width: 768px) and (max-width: 1024px)
+{
   
   #navbar ul {
     flex-direction: row;
-    font-size: 28px;
   }
 
   #navbar ul li {
+    font-size: 20px;
     margin-right: 0;
     margin-bottom: 1rem;
   }
   
   #welcome-section h1{
-    font-size: 45px;
-  }
-  .container-principal p{
     font-size: 30px;
   }
+  .container-principal p{
+    font-size: 20px;
+  }
   #projects .title-mp{
-    font-size: 25px;
+    font-size: 20px;
   }
   .project-tile{
     margin: 0px;
@@ -301,13 +299,13 @@ a{
     margin: 0;
   }
   .project-tile figcaption{
-    font-size: 17px;
-  }
-  .botao{
     font-size: 15px;
   }
+  .botao{
+    font-size: 12px;
+  }
   .text-principal{
-    font-size: 40px;
+    font-size: 30px;
   }
   .subtext-principal{
     font-size: 20px;
@@ -328,3 +326,4 @@ a{
     font-size: 25px;
   }
 }
+
