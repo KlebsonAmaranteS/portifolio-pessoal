@@ -15,13 +15,13 @@
     </nav>
     <section id="welcome-section">
         <div class="container-principal">
-            <h1>Oi, eu sou o Klebson!</h1>
+            <h1>Olá, eu sou o Klebson!</h1>
             <p>Um desenvolvedor web</p>
         </div>
     </section>
     <section id="projects">
         <div class="title-mp">
-        <h2>Alguns dos meus projetos</h2>
+        <h2>Alguns dos meus projetos abaixo:</h2>
     </div>
       <div class="project-container">
       <div class="project-tile">
@@ -61,6 +61,18 @@
     <footer>
         <p>Site feito por <a href="https://github.com/KlebsonAmaranteS">Klebson Amarante ©</a></p>
     </footer>
+    <script>
+      const text = "Olá, eu sou o Klebson, um desenvolvedor web";
+      let index = 0;
+      function type() {
+        document.getElementById("typing-effect").innerHTML = text.slice(0, index++);
+        if (index > text.length) {
+      index = 0;
+        }
+        setTimeout(type, 100);
+      }
+      type();
+    </script>
   </body>
   
 </html>
